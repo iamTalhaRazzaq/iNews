@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from "react-router-dom";
-export default class Navbar extends Component {
-  render() {
+
+const Navbar =()=> {
     return (
       <>
       <div>
@@ -19,13 +19,6 @@ export default class Navbar extends Component {
                 </ul>
                 <div>
                 </div>
-                {/* <select class="form-select form-select-lg " style={{width:'10%'}} aria-label=".form-select-lg example">
-                   { <option selected>Home</option> }
-                  <option value={this.props.category}><Link className="" to="/business">Business</Link></option>
-                  <option value={this.props.category}>Two</option>
-                  <option value={this.props.category}>Three</option>
-                </select> */}
-
                 <div className="dropdown">
                   <button className=" btn btn-secondary dropdown-toggle mx-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" >{'News Catagory'}</button>
                   <ul className="dropdown-menu dropdown-menu-dark mx-2" aria-labelledby="dropdownMenuButton2">
@@ -38,24 +31,11 @@ export default class Navbar extends Component {
                     <li><Link className="dropdown-item" to="/technology">Technology</Link></li>
                   </ul>
                 </div>
-                {/* <div className="dropdown">
-                  <button className="btn btn-secondary dropdown-toggle mx-3  my-2" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Country</button>
-                  <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                    <li><Link className="dropdown-item" to="/au">Australia</Link></li>
-                    <li><Link className="dropdown-item" to="/ca">Canada</Link></li>
-                    <li><Link className="dropdown-item" to="/sa">Saudi Arabia</Link></li>
-                    <li><Link className="dropdown-item" to="/uk">United Kingdom</Link></li>
-                    <li><Link className="dropdown-item" to="/us">USA</Link></li>
-                    <li><Link className="dropdown-item" to="/nz">New Zealand</Link></li>
-                    <li><Link className="dropdown-item" to="/in">India</Link></li>
-                  </ul>
-                </div> */}
-
                 </div>
             </div>
         </nav>
       </div>
       </>
     )
-  }
 }
+export default Navbar;
